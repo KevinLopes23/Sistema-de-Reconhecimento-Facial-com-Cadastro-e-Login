@@ -12,6 +12,8 @@ if not os.path.exists('usuarios'):
 def verificar_usuario_existente(nova_imagem_encoding):
     # Percorre as imagens na pasta 'usuarios' para ver se já existe um rosto semelhante
     for filename in os.listdir('usuarios'):
+        if not filename.lower().endswith((".jpg", ".jpeg", ".png")):
+            continue
         caminho_imagem = os.path.join('usuarios', filename)
         imagem_existente = face_recognition.load_image_file(caminho_imagem)
         encoding_existente = face_recognition.face_encodings(imagem_existente)

@@ -62,6 +62,8 @@ python main.py
 
 Os modelos `shape_predictor_68_face_landmarks.dat` e `dlib_face_recognition_resnet_model_v1.dat` já estão no repositório e precisam ficar na mesma pasta dos scripts. No login, pressione **Espaço** para tentar autenticar e **Esc** para sair.
 
+As fotos capturadas no cadastro ficam só na sua máquina, em `usuarios/` — a pasta é ignorada pelo Git (exceto o `.gitkeep`) para que imagens de rosto nunca sejam versionadas.
+
 ## 📄 Licença
 
 Distribuído sob a licença [MIT](LICENSE).

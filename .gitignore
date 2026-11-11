@@ -1,0 +1,7 @@
+# Fotos capturadas no cadastro (dados biométricos) nunca devem ser versionadas
+usuarios/*
+!usuarios/.gitkeep
+
+# Python
+__pycache__/
+*.pyc

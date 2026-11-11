@@ -21,6 +21,8 @@ imagens_cadastradas = []
 nomes_cadastrados = []
 
 for arquivo in os.listdir('usuarios'):
+    if not arquivo.lower().endswith((".jpg", ".jpeg", ".png")):
+        continue
     imagem = face_recognition.load_image_file(f'usuarios/{arquivo}')
     # Detecta rostos na imagem
     faces = face_detector(imagem, 1)
